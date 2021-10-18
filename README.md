@@ -134,7 +134,7 @@ it should finish in about a minute in a half with regards to the initial data si
 
 ## Task 4
 
-I added some tests to test the first task
+I added some tests to test the first task. 
 
 # Dockerizing it
 
@@ -148,9 +148,10 @@ I decided to put everything on the public github container registry so you can r
 # Conclusion
 
 Honestly, I am not happy with how much trouble I had implementing part 3 of the assignment. 
-The time spent on part 3 was really too long (about 5 hours). However, I did learn a great deal
-of information about the Spark Structured Streaming API.
+The time spent on part 3 was really too long (about 5 hours). I am also not really happy with how that pipeline works,
+it feels a bit fragile because it depends on how fast your PC can execute these spark tasks. 
 
+However, I did learn a great deal of information about the Spark Structured Streaming API. 
 
  
 
