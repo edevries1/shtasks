@@ -1,5 +1,25 @@
 # Airport analyzer
 
+# Building
+
+The project can be built using a bash script, like this: 
+
+```shell
+# requires a github personal access token to work
+$ ./build.sh
+```
+
+# Running
+
+To run the project, either run it locally using one of these commands:
+
+```shell
+# valid tasks are task1, task2 and task3
+$ sbt "run task1" 
+# OR
+$ ./run.sh task1 
+```
+
 ## Task 1
 
 Since I am familiar with the Spark batch API, this one was rather easy. Just load the file
@@ -114,7 +134,16 @@ it should finish in about a minute in a half with regards to the initial data si
 
 ## Task 4
 
-TODO
+I added some tests to test the first task
+
+# Dockerizing it
+
+I thought adding everything to a docker image would be a good idea. I started out with some
+tool to build a fat .jar file, but that failed horribly due to version conflicts
+in all kinds of packages. So I quickly tried something else, called `sbt-native-packager` which can
+just generate the docker stuff for you. See `build.sh` for how to build this project.
+
+I decided to put everything on the public github container registry so you can run it all without authentication configurations.
 
 # Conclusion
 
